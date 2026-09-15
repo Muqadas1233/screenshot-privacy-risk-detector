@@ -1,63 +1,58 @@
 # 🛡️ Screenshot Privacy Risk Detector
 
-An AI-assisted privacy tool that analyzes screenshots for potentially sensitive information before they are shared.
+An AI-assisted privacy tool that analyzes screenshots for potentially sensitive information before they are shared online.
 
 ## Problem
 
-Screenshots can accidentally expose emails, phone numbers, URLs, secret-like tokens, names, organizations, or locations.
+Screenshots can accidentally expose information such as:
 
-## Solution
+- Email addresses
+- Phone numbers
+- URLs
+- Secret-like tokens
+- Other potentially sensitive text
 
-This project combines OCR, NLP, regular-expression pattern detection, risk scoring, and automatic redaction.
+Manually checking every screenshot before sharing can be inconvenient and error-prone.
 
-## Features
+## Here's the Solution
 
-- Screenshot upload
-- OCR-based text extraction
-- Email detection
-- Phone number detection
-- URL detection
-- Secret-like pattern detection
-- NLP entity detection
-- Privacy risk scoring
-- Automatic redaction
-- Streamlit interface
+Screenshot Privacy Risk Detector analyzes an uploaded screenshot using OCR and pattern-based detection.
 
-## Technologies
+It:
 
-- Python
-- EasyOCR
-- spaCy
-- OpenCV
-- Regular Expressions
-- NumPy
-- Streamlit
+1. Extracts text from the screenshot
+2. Detects potentially sensitive patterns
+3. Calculates a privacy risk score
+4. Assigns a risk level
+5. Automatically redacts detected information
+6. Shows the original and redacted versions side-by-side
 
-## Workflow
+## ✨ Features
 
-Screenshot  
-↓  
-OCR  
-↓  
-Sensitive Information Detection  
-↓  
-Privacy Risk Scoring  
-↓  
+- 📸 Screenshot upload
+- 🔍 OCR-based text extraction
+- 📧 Email detection
+- 📱 Phone number detection
+- 🔗 URL detection
+- 🔑 Secret-like pattern detection
+- 📊 Privacy risk scoring
+- 🔒 Automatic redaction
+- 🌙 Dark modern interface
+- 🖼️ Original vs Redacted comparison
+
+## The Detection Workflow
+
+```text
+Screenshot
+     ↓
+OCR Text Extraction
+     ↓
+Sensitive Information Detection
+     ↓
+Risk Scoring
+     ↓
+Risk Level
+     ↓
 Automatic Redaction
-
-## Disclaimer
-
-This is an educational prototype and does not guarantee that all sensitive information will be detected.
-
-## Future Improvements
-
-- More PII categories
-- Better entity recognition
-- Improved redaction
-- Multi-language OCR
-- More advanced risk scoring
-- Cloud-based privacy scanning
-
-## Author
-
-5th Semester BSAI Student
+     ↓
+Privacy-Safe Preview
